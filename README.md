@@ -1,33 +1,59 @@
-
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+</style>
 </head>
 <body>
-  
-  <div class="scrollmenu">
-  <a href="#home">Home</a>
+
+<div class="navbar">
+  <a href="#home" class="active">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  ...
 </div>
-  
-  
-  div {
-background-color: lightblue;
-border: 1px solid black;
-height: 100px;
-width: 500px;
-overflow-x: scroll;
-}
-p {
-width: 1000px;
-margin: 10px;
-<p>  goes here. Also, you can place other elements within this parent div. </p>
-}
-  
-<div>
-<p> (Your text </p>
+
+<div class="main">
+  <h1>Bottom Navigation Bar</h1>
+  <p>Some text some text some text.</p>
 </div>
+
 </body>
 </html>
